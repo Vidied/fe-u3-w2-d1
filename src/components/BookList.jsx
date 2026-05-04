@@ -15,6 +15,7 @@ class BookList extends Component {
           <Col xs={12} md={6} className="text-center">
             <Form.Group>
               <Form.Control
+              className="my-2"
                 type="search"
                 placeholder="Cerca un libro..."
                 value={this.state.searchQuery}

@@ -5,8 +5,9 @@ const SingleBook = ({ book, selectedAsin, changeSelectedAsin }) => {
     <Card
       onClick={() => changeSelectedAsin(book.asin)}
       style={{
+        backgroundColor: "#0F0B17",
         border:
-          selectedAsin === book.asin ? "3px solid red" : "1px solid lightgray",
+          selectedAsin === book.asin ? "3px solid #FF4D6D" : "1px solid lightgray",
         cursor: "pointer",
         marginBottom: "15px",
       }}
@@ -22,7 +23,7 @@ const SingleBook = ({ book, selectedAsin, changeSelectedAsin }) => {
         }}
       />
       <Card.Body>
-        <Card.Title className="text-dark text-truncate">
+        <Card.Title className=" text-truncate" style={{ color: "#00FF87" }}>
           {book.title}
         </Card.Title>
       </Card.Body>
