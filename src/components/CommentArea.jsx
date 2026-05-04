@@ -51,7 +51,7 @@ class CommentArea extends Component {
     return (
       <div className="sticky-top" style={{ top: "20px" }}>
         {!this.props.asin && (
-          <Alert variant="info">Seleziona un libro per vedere i commenti</Alert>
+          <Alert style={{backgroundColor: '#00F3FF', color: '#FF00FF'}}>Seleziona un libro per vedere i commenti</Alert>
         )}
         
         {this.state.isLoading && <Spinner animation="border" variant="primary" />}

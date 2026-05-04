@@ -3,7 +3,7 @@ import { Alert, Container } from 'react-bootstrap';
 const Welcome = () => {
   return (
     <Container className="my-3">
-      <Alert variant="info">
+      <Alert style={{ backgroundColor: '#00F3FF', color: '#FF00FF' }} >
         <Alert.Heading>Benvenuti in EPI-Libreria!</Alert.Heading>
         <p>
           Il tuo angolo preferito per scoprire nuove storie e avventure indimenticabili.
